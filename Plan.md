@@ -9,8 +9,8 @@
 | Reading  | Discussion | Lab   | Homework    | Project |
 | -------- | ---------- | ----- | ----------- | ------- |
 | Chap 1.1 | Disc 01    | Lab 0 | homework 00 | Proj0   |
-| Chap 1.2 | Disc 02    |       |             |         |
-|          |            |       |             |         |
+| Chap 1.2 | Disc 02    | Lab 1 |             |         |
+|          |            | Lab 2 |             |         |
 |          |            |       |             |         |
 |          |            |       |             |         |
 |          |            |       |             |         |
