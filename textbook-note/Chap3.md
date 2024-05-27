@@ -1,6 +1,6 @@
 # Testing Lecture Video
 
-对这一系列视频做个笔记
+对这一系列视频做个笔记，最开始是 lab2 的后来发现是 Chap3 的内容
 
 ## Video 1: A new Way
 
