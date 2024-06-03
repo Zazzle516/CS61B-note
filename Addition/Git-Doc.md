@@ -479,13 +479,88 @@ git reflog
 
 #### Nuclear Option: filter-branch
 
+因为使用 `git rebase` 命令在修改远古提交的时候实际是很麻烦也很危险的，如果你非要重写一个大范围的历史提交记录，可以考虑使用 `git filter-branching` 命令
+
+现在更推荐使用 `git-filter-repo` 命令，调用 Python 脚本执行，原本的 Git 命令实际上有点坑
+
+> [newren/git-filter-repo: Quickly rewrite git repository history (filter-branch replacement) (github.com)](https://github.com/newren/git-filter-repo) 
+
+基于一些常见场景做一些介绍
 
 
 
+##### Removing a File from Every Commit
+
+比如你不经思考的提交了一堆二进制文件，比如 Antlr4 的自动生成文件之类的
+
+```shell
+git filter-branch --tree-filter 'rm -f password.txt' HEAD
+
+# 指令模板
+git filter-branch --tree-filter 'rm -f file_name' HEAD
+
+# 在所有分支上生效
+git filter-branch --tree-filter --all 'rm -f file_name' HEAD
+```
+
+一般来说，推荐在测试分支上完成，如果成功没有问题了，把该分支的内容强制覆盖到主分支上
+
+
+
+##### Making a Subdirectory the New Root
+
+修改项目的根路径，Git 同时会**移除对该根路径的文件没有作用的提交** 
+
+```shell
+git filter-branch --subdirectory-filter root_file HEAD
+```
+
+
+
+##### Changing Email Address Globally
+
+这行命令执行下去会修改每个提交的 SHA-1 计算值，有点长，感觉用不到几次，知道就好
+
+```shell
+$ git filter-branch --commit-filter '
+        if [ "$GIT_AUTHOR_EMAIL" = "schacon@localhost" ];
+        then
+                GIT_AUTHOR_NAME="Scott Chacon";
+                GIT_AUTHOR_EMAIL="schacon@example.com";
+                git commit-tree "$@";
+        else
+                git commit-tree "$@";
+        fi' HEAD
+```
+
+
+
+> 后面的内容我只准备自己看看了，不记笔记了
 
 ### Git Rebasing
 
 [Git - Rebasing (git-scm.com)](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) 
+
+这个合并思路和 `git merge` 是相反的，比如把子分支的代码合并到主分支，`git merge` 是先切换到主分支，执行 `merge` 合并子分支的代码，而 `git rebase` 是切换到子分支，执行 `git rebase master` 
+
+`git rebase` 的合并实际上是基于两个分支共同的祖先，会先把子分支上所有不同保存到一个暂时文件中，然后切换分支，把所有改动作用生效（注意此时生效的只有子分支的内容，还没有与主分支进行合并）
+
+```shell
+git checkout master
+git merge sub-branch
+```
+
+
+
+`git rebase` 的结果相对 `git merge` 没有任何区别，只是提交记录更干净，看上去像是线性的历史
+
+核心还是在你写代码的时候脑子要清楚你写的是哪部分，会不会有冲突
+
+
+
+Q：在把 `cilent-branch` 合并到 `master-branch` 上的时候，C3 起了什么作用
+
+因为实际的合并代码，并没有涉及 C3 的代码		？？？？？需要自己测试一下
 
 
 
