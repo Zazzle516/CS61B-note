@@ -15,8 +15,8 @@
 | Chap 1.1 | Disc 01    | Lab 0 | homework 00 | Proj0     |
 | Chap 1.2 | Disc 02    | Lab 1 |             | Proj1 CK1 |
 | Chap 2   | Disc 03    | Lab 2 |             | Proj1 EC  |
-|          |            | Lab 3 |             |           |
-|          |            |       |             |           |
+| Chap 3   |            | Lab 3 |             |           |
+| Chap 4.1 |            | Lab 4 |             |           |
 |          |            |       |             |           |
 |          |            |       |             |           |
 |          |            |       |             |           |
