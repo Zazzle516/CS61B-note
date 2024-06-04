@@ -10,19 +10,19 @@
 
 - proj 1
 
-| Reading  | Discussion | Lab   | Homework    | Project   |
-| -------- | ---------- | ----- | ----------- | --------- |
-| Chap 1.1 | Disc 01    | Lab 0 | homework 00 | Proj0     |
-| Chap 1.2 | Disc 02    | Lab 1 |             | Proj1 CK1 |
-| Chap 2   | Disc 03    | Lab 2 |             | Proj1 EC  |
-| Chap 3   |            | Lab 3 |             |           |
-| Chap 4.1 |            | Lab 4 |             |           |
-| Chap 4.2 |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
-|          |            |       |             |           |
+| Reading  | Discussion   | Lab   | Homework    | Project  |
+| -------- | ------------ | ----- | ----------- | -------- |
+| Chap 1.1 | Disc 01      | Lab 0 | homework 00 | Proj0    |
+| Chap 1.2 | Disc 02      | Lab 1 |             | Proj1 A  |
+| Chap 2   | Disc 03      | Lab 2 |             |          |
+| Chap 3   | Disc 03 prep | Lab 3 |             | Proj1 EC |
+| Chap 4.1 | Disc 04      | Lab 4 |             |          |
+| Chap 4.2 |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
+|          |              |       |             |          |
 
