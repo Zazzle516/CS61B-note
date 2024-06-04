@@ -17,7 +17,7 @@
 | Chap 2   | Disc 03    | Lab 2 |             | Proj1 EC  |
 | Chap 3   |            | Lab 3 |             |           |
 | Chap 4.1 |            | Lab 4 |             |           |
-|          |            |       |             |           |
+| Chap 4.2 |            |       |             |           |
 |          |            |       |             |           |
 |          |            |       |             |           |
 |          |            |       |             |           |
