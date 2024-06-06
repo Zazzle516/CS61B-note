@@ -8,7 +8,7 @@
 
 
 
-- proj 1
+- 明天把 Chap4 看完然后完成proj 1B，还有一个 Dis
 
 | Reading  | Discussion   | Lab   | Homework    | Project  |
 | -------- | ------------ | ----- | ----------- | -------- |
@@ -18,8 +18,8 @@
 | Chap 3   | Disc 03 prep | Lab 3 |             | Proj1 EC |
 | Chap 4.1 | Disc 04      | Lab 4 |             |          |
 | Chap 4.2 |              |       |             |          |
-|          |              |       |             |          |
-|          |              |       |             |          |
+| Chap 4.3 |              |       |             |          |
+| Chap 4.4 |              |       |             |          |
 |          |              |       |             |          |
 |          |              |       |             |          |
 |          |              |       |             |          |
